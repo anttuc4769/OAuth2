@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32611.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.0", "OAuth2.0\OAuth2.0.csproj", "{D3D888AD-CFE5-4D5D-88AA-AFFC3722397D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3D888AD-CFE5-4D5D-88AA-AFFC3722397D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D888AD-CFE5-4D5D-88AA-AFFC3722397D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D888AD-CFE5-4D5D-88AA-AFFC3722397D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D888AD-CFE5-4D5D-88AA-AFFC3722397D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF96D92-B4CD-4567-8E6D-8650C8EB3AA5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA8DA53B-C7FF-4E37-AF7B-7277F8259965}
+	EndGlobalSection
+EndGlobal

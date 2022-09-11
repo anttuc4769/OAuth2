@@ -1,0 +1,58 @@
+﻿@model List<OAuth2._0.Repositories.Models.Token>
+<style>
+    .myRow {
+        word-wrap: break-word;
+        min-width: 100px;
+        max-width: 400px;
+    }
+</style>
+
+<div class="table-responsive">
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Actions</th>
+                <th>Source</th>
+                <th>Type</th>
+                <th>Token</th>
+                <th>Expires In</th>
+                <th>Expires On</th>
+                <th>Refresh Token</th>
+                <th>Refresh Expires In</th>
+                <th>Resource</th>
+                <th>Profile</th>
+                <th>Scope</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var entity in Model.OrderByDescending(a => a.Id))
+            {
+                <tr>
+                    <td class="align-text-top">@entity.Id</td>
+                    <td class="align-text-top myRow">
+                        <a href="https://jwt.ms/#id_token=@entity.AccessToken" target="_blank">Decode Token</a>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br />
+                        <br />
+                        <a href="/api/wch/test?token=@entity.AccessToken" target="_blank">Test Token</a>
+                    </td>
+                    <td class="align-text-top">@entity.Source</td>
+                    <td class="align-text-top">@entity.TokenType</td>
+                    <td class="align-text-top myRow">@entity.AccessToken</td>
+                    <td class="align-text-top myRow">@entity.ExpiresIn</td>
+                    <td class="align-text-top myRow">@entity.ExpiresOn</td>
+                    <td class="align-text-top myRow">@entity.RefreshToken</td>
+                    <td class="align-text-top myRow">@entity.RefreshTokenExpiresIn</td>
+                    <td class="align-text-top myRow">@entity.Resource</td>
+                    <td class="align-text-top myRow">@entity.ProfileInfo</td>
+                    <td class="align-text-top myRow">@entity.Scope</td>
+                    <td class="align-text-top myRow">@entity.Created</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
